@@ -37,7 +37,7 @@ RegisterNetEvent('hud:server:GainStress', function(amount)
     newStress = 0
     Player.Functions.SetMetaData('stress', newStress)
     TriggerClientEvent('hud:client:UpdateStress', src, newStress)
-    TriggerClientEvent('QBCore:Notify', src, Lang:t("notify.stress_gain"), 'error', 1500)
+    --TriggerClientEvent('QBCore:Notify', src, Lang:t("notify.stress_gain"), 'error', 1500)
 end)
 
 RegisterNetEvent('hud:server:RelieveStress', function(amount)
